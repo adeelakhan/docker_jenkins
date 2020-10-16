@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'pip install flask xmlrunner'
-                sh 'python app.py'
+                sh 'python app.py &'
             }
         }
         stage('test') {
