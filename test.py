@@ -10,7 +10,7 @@ class TestHello(unittest.TestCase):
         self.assertEqual(rv.data, b'Hello World!\n')
     def test_adeel(self):
         rv = self.app.get('/adeel')
-        self.assertEqual(rv.status, '200OK')
+        self.assertEqual(rv.status, '200 OK')
         self.assertEqual(rv.data, b"Adeel's Page!\n")
 if __name__ == '__main__':
     import xmlrunner
